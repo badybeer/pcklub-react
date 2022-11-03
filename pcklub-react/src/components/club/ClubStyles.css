@@ -1,0 +1,74 @@
+.club {
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .4);
+    position: relative;
+}
+
+.club:before {
+    content: '';
+    position: absolute;
+    background: url('../../assets/server2.jpg') no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+.club .container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.club .content {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    margin-left: 6rem;
+}
+
+.club h2 {
+    color: #f8f8f8;
+}
+
+.club .blue {
+    color: var(--primary-color);
+}
+
+p {
+    color: #f8f8f8;
+    margin: 1rem 0;
+}
+
+.club li {
+    margin-left: 2rem;
+}
+
+.club .priority {
+    font-family: 'Roboto', sans-serif;
+    padding: .7rem 1.5rem;
+    margin: 1rem 0;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #f8f8f8;
+    font-size: 1rem;
+    font-weight: 500;
+    display: flex;
+    border-radius: 4px;
+    width: fit-content;
+}
+  
+.club .priority:hover {
+    background-color: #47dcff;
+    border: 1px solid #47dcff;
+}
+
+@media screen and (max-width:940px) {
+   .club .content {
+    margin-left: 1rem;
+   } 
+
+   .club .priority {
+    font-size: 1.8rem;
+    }
+}
